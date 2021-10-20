@@ -4,7 +4,7 @@ import { Model } from 'mongoose';
 import * as bcrypt from 'bcrypt';
 import * as _ from 'lodash';
 
-import { IUser } from 'src/interfaces/user.interface';
+import { IUser } from 'src/user/interfaces/user.interface';
 import { CreateUserDto } from './dto/crate-user.dto';
 
 @Injectable()

@@ -1,6 +1,7 @@
+import * as mongoose from 'mongoose';
 import { roleEnum } from './../enums/role.enum';
 import { genderEnum } from './../enums/gender.enum';
-import * as mongoose from 'mongoose';
+
 
 export const UserSchema =  new mongoose.Schema({
     email: {type: String, required: true},

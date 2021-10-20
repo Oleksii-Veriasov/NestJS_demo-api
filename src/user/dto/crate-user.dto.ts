@@ -1,4 +1,4 @@
-import { IAddress } from "src/interfaces/address.interface";
+import { IAddress } from "src/user/interfaces/address.interface";
 
 export class CreateUserDto {
     readonly email: string;
