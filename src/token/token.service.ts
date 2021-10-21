@@ -13,11 +13,11 @@ export class TokenService {
         return await userToken.save()
     }
     
-    async delete(uId: string, token: string): Promise<{ ok?: number, n?: number }> {
+    async delete(uId: string, token: string): Promise<{ }> {
         return await this.tokenModel.deleteOne({ uId, token })
     }
 
-    async deleteAll(uId: string): Promise<{ ok?: number, n?: number }> {
+    async deleteAll(uId: string): Promise<{ }> {
         return await this.tokenModel.deleteMany({ uId });
     }
 

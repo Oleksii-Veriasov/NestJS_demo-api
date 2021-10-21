@@ -3,6 +3,7 @@ import { Document } from "mongoose";
 
 export interface IUser extends Document {
     readonly email: string;
+    status: string;
     readonly avatar: string;
     readonly avatarId: string;
     readonly firstName: string;
@@ -12,6 +13,6 @@ export interface IUser extends Document {
     readonly profession: string;
     readonly searchField: string;
     readonly phone: string;
-    readonly role: string;
+    readonly roles: string;
     readonly password: string;
 }
